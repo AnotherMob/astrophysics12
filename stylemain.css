@@ -193,7 +193,7 @@ height: 9px;
 
 .reviews-1 img {
 	width: 100%;
-	height: 35%;
+	height: 50%;
 	border-radius: 20px;
 	margin-bottom: 5px;
 }
@@ -203,6 +203,12 @@ height: 9px;
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+        
+}
+
+.reviews-1 a {
+text-decoration: none;
+
 }
 
 .reviews-1 p {
@@ -211,8 +217,11 @@ height: 9px;
 }
 
 .reviews-1:hover { 
-  background-color: goldenrod;
+  background-color: lightslategrey;
   transition: background-color 0.3s ease;
   border-radius: 10px;
 }
 
+.reviews-1 p {
+color: black;
+}
