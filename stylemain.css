@@ -41,6 +41,36 @@ hr {
 margin: 0;
 }
 
+.toggle-label {
+margin-top: 15.5px;
+      position: fixed;
+      background-color: black;
+      cursor: pointer;
+      z-index: 1001;
+width: 50px;
+height: 35x;
+line-height: 53px;
+border-bottom: 4px solid #9932CC;
+padding: 0;
+color: #fff;
+font-size: 18px;
+font-style: bold;
+font-weight: 500;
+text-align: center;
+text-decoration: none;
+display: block;
+    }
+
+.toggle-label:hover {
+ border-bottom:  4px solid #D4953C;
+ transition:  0.3s ease;
+
+}
+
+
+ #menu-toggle {
+      display: none;
+    }
 
 .bgeffect {
  margin: 0;
@@ -70,11 +100,28 @@ body {
 
 
 
-     
+.menu {
+transform: translateX(0%);
+ transition: transform 0.3s ease;
+z-index: 1000;
+position: fixed;
+   z-index: 50;
+   overflow: hidden;
+   margin: 0;
+   margin-bottom: 20px;
+   border-radius: 8px;
+   padding-left: 50px;
+   padding-bottom: 80px;
+
+}
 
 
- .logofix {
+#menu-toggle:checked ~ .menu {
+     transform: translateX(-100%);
+    }
 
+
+.logofix {
     position: fixed;
    z-index: 100;
    overflow: hidden;
@@ -84,18 +131,7 @@ body {
    border-radius: 8px;
 }
 
- .menufix {
 
-   position: fixed;
-   z-index: 50;
-   overflow: hidden;
-   margin: 0;
-   margin-bottom: 20px;
-  
-   border-radius: 8px;
-   padding-left: 50px;
-   padding-bottom: 80px;
-}
 
 
 
@@ -148,7 +184,6 @@ border-color: #87A248;
 }
 
 
-
 .menu li:nth-child(1) a:hover {
 border-bottom: 35px solid #636393;
 height: 9px;
@@ -173,6 +208,7 @@ height: 9px;
 border-bottom: 35px solid #87A248;
 height: 9px;
 }
+
 
 
 .subtitle h2 {
